@@ -1,0 +1,1 @@
+{"version":3,"file":"instrmt_leg_sec_list_grp.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/instrmt_leg_sec_list_grp.ts"],"names":[],"mappings":"","sourcesContent":["import { IInstrmtLegSecListGrpNoLegs } from './instrmt_leg_sec_list_grp_no_legs'\r\n\r\nexport interface IInstrmtLegSecListGrp {\r\n  NoLegs?: IInstrmtLegSecListGrpNoLegs[]\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/dictionary/parser/index.ts"],"names":[],"mappings":";;;;;AAAA,gCAA0B;AAC1B,6BAAuB;AACvB,sCAAgC","sourcesContent":["export * from './quickfix'\r\nexport * from './fixml'\r\nexport * from './fix-repository'\r\n"]}

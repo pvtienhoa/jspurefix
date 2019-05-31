@@ -1,0 +1,1 @@
+{"version":3,"file":"leg_payment_stream_pricing_date_grp.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/leg_payment_stream_pricing_date_grp.ts"],"names":[],"mappings":"","sourcesContent":["export interface ILegPaymentStreamPricingDateGrp {\r\n  LegPaymentStreamPricingDate?: Date// 41594\r\n  LegPaymentStreamPricingDateType?: number// 41595\r\n}\r\n"]}

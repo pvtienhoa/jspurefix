@@ -1,0 +1,1 @@
+{"version":3,"file":"instrument_extension.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/instrument_extension.ts"],"names":[],"mappings":"","sourcesContent":["import { IAttrbGrp } from './attrb_grp'\r\n\r\nexport interface IInstrumentExtension {\r\n  DeliveryForm?: number// 668\r\n  PctAtRisk?: number// 869\r\n  AttrbGrp?: IAttrbGrp\r\n}\r\n"]}

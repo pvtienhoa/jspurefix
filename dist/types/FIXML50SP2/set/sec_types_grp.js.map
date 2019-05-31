@@ -1,0 +1,1 @@
+{"version":3,"file":"sec_types_grp.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/sec_types_grp.ts"],"names":[],"mappings":"","sourcesContent":["export interface ISecTypesGrp {\r\n  SecurityType?: string// 167\r\n  SecuritySubType?: string// 762\r\n  Product?: number// 460\r\n  CFICode?: string// 461\r\n  TransactTime?: Date// 60\r\n}\r\n"]}

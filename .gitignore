@@ -62,7 +62,7 @@ typings/
 # next.js build output
 .next
 
-# compiled javascript
-dist/
+# compiled sample javascript
+dist/sample/
 
 data/fix_repo

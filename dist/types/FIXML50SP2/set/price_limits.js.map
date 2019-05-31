@@ -1,0 +1,1 @@
+{"version":3,"file":"price_limits.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/price_limits.ts"],"names":[],"mappings":"","sourcesContent":["export interface IPriceLimits {\r\n  PriceLimitType?: number// 1306\r\n  LowLimitPrice?: number// 1148\r\n  HighLimitPrice?: number// 1149\r\n  TradingReferencePrice?: number// 1150\r\n}\r\n"]}

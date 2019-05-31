@@ -1,0 +1,1 @@
+{"version":3,"file":"order_qty_data.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/order_qty_data.ts"],"names":[],"mappings":"","sourcesContent":["export interface IOrderQtyData {\r\n  OrderQty?: number// 38\r\n  CashOrderQty?: number// 152\r\n  OrderPercent?: number// 516\r\n  RoundingDirection?: string// 468\r\n  RoundingModulus?: number// 469\r\n}\r\n"]}

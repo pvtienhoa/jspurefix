@@ -1,0 +1,1 @@
+{"version":3,"file":"instrmt_leg_grp.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/repo/set/instrmt_leg_grp.ts"],"names":[],"mappings":"","sourcesContent":["import { IInstrumentLeg } from './instrument_leg'\r\n\r\nexport interface IInstrmtLegGrp {\r\n  InstrumentLeg?: IInstrumentLeg\r\n}\r\n"]}

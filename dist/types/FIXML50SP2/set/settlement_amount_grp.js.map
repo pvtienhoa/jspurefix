@@ -1,0 +1,1 @@
+{"version":3,"file":"settlement_amount_grp.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/settlement_amount_grp.ts"],"names":[],"mappings":"","sourcesContent":["export interface ISettlementAmountGrp {\r\n  SettlementAmount?: number// 1701\r\n  SettlementAmountCurrency?: string// 1702\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"price_movement_value_grp.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/price_movement_value_grp.ts"],"names":[],"mappings":"","sourcesContent":["export interface IPriceMovementValueGrp {\r\n  PriceMovementValue?: number// 1921\r\n  PriceMovementPoint?: number// 1922\r\n  PriceMovementType?: number// 1923\r\n}\r\n"]}

@@ -1,0 +1,24 @@
+/// <reference types="node" />
+import { IAffectedOrdGrp } from './set/affected_ord_grp';
+import { IInstrument } from './set/instrument';
+import { IUnderlyingInstrument } from './set/underlying_instrument';
+export interface IOrderMassCancelReport {
+    ClOrdID?: string;
+    SecondaryClOrdID?: string;
+    OrderID: string;
+    SecondaryOrderID?: string;
+    MassCancelRequestType: string;
+    MassCancelResponse: string;
+    MassCancelRejectReason?: string;
+    TotalAffectedOrders?: number;
+    AffectedOrdGrp?: IAffectedOrdGrp;
+    TradingSessionID?: string;
+    TradingSessionSubID?: string;
+    Instrument?: IInstrument;
+    UnderlyingInstrument?: IUnderlyingInstrument;
+    Side?: string;
+    TransactTime?: Date;
+    Text?: string;
+    EncodedTextLen?: number;
+    EncodedText?: Buffer;
+}

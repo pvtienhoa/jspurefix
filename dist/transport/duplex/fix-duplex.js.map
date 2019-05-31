@@ -1,0 +1,1 @@
+{"version":3,"file":"fix-duplex.js","sourceRoot":"","sources":["../../../src/transport/duplex/fix-duplex.ts"],"names":[],"mappings":";;AAEA,MAAsB,SAAS;CAI9B;AAJD,8BAIC","sourcesContent":["import { Readable, Writable } from 'stream'\r\n\r\nexport abstract class FixDuplex {\r\n  public readable: Readable\r\n  public writable: Writable\r\n  public abstract end (): void\r\n}\r\n"]}

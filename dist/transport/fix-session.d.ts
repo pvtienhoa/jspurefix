@@ -1,0 +1,42 @@
+/// <reference types="node" />
+import { MsgView } from '../buffer';
+import { IJsFixConfig, IJsFixLogger } from '../config';
+import { FixSessionState } from './fix-session-state';
+import { MsgTransport } from './msg-transport';
+import { ILooseObject } from '../collections/collection';
+import * as events from 'events';
+export declare abstract class FixSession {
+    readonly config: IJsFixConfig;
+    logReceivedMsgs: boolean;
+    protected timer: NodeJS.Timer;
+    protected transport: MsgTransport;
+    manageSession: boolean;
+    checkMsgIntegrity: boolean;
+    protected readonly me: string;
+    protected readonly initiator: boolean;
+    protected readonly acceptor: boolean;
+    protected readonly sessionState: FixSessionState;
+    protected readonly emitter: events.EventEmitter;
+    protected readonly sessionLogger: IJsFixLogger;
+    protected requestLogoutType: string;
+    protected respondLogoutType: string;
+    protected requestLogonType: string;
+    protected constructor(config: IJsFixConfig);
+    run(transport: MsgTransport): Promise<any>;
+    protected subscribe(): void;
+    protected checkForwardMsg(msgType: string, view: MsgView): void;
+    protected terminate(error: Error): void;
+    protected peerLogout(view: MsgView): void;
+    protected send(msgType: string, obj: ILooseObject): void;
+    protected sessionLogout(): void;
+    done(): void;
+    reset(): void;
+    protected stop(): void;
+    protected abstract onMsg(msgType: string, view: MsgView): void;
+    protected abstract onDecoded(msgType: string, txt: string): void;
+    protected abstract onEncoded(msgType: string, txt: string): void;
+    protected abstract onApplicationMsg(msgType: string, view: MsgView): void;
+    protected abstract onReady(view: MsgView): void;
+    protected abstract onStopped(): void;
+    protected abstract onLogon(view: MsgView, user: string, password: string): boolean;
+}

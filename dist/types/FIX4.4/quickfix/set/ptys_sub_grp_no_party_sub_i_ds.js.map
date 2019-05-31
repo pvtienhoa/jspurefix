@@ -1,0 +1,1 @@
+{"version":3,"file":"ptys_sub_grp_no_party_sub_i_ds.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/ptys_sub_grp_no_party_sub_i_ds.ts"],"names":[],"mappings":"","sourcesContent":["export interface IPtysSubGrpNoPartySubIDs {\r\n  PartySubID?: string// 523\r\n  PartySubIDType?: number// 803\r\n}\r\n"]}

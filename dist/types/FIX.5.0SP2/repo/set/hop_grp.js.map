@@ -1,0 +1,1 @@
+{"version":3,"file":"hop_grp.js","sourceRoot":"","sources":["../../../../../src/types/FIX.5.0SP2/repo/set/hop_grp.ts"],"names":[],"mappings":"","sourcesContent":["export interface IHopGrp {\r\n  HopCompID?: string  // 628\r\n  HopSendingTime?: Date// 629\r\n  HopRefID?: number// 630\r\n}\r\n"]}

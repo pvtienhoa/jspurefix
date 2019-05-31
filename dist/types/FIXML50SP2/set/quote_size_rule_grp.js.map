@@ -1,0 +1,1 @@
+{"version":3,"file":"quote_size_rule_grp.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/quote_size_rule_grp.ts"],"names":[],"mappings":"","sourcesContent":["export interface IQuoteSizeRuleGrp {\r\n  MinBidSize?: number// 647\r\n  MinOfferSize?: number// 648\r\n  FastMarketIndicator?: boolean// 2447\r\n}\r\n"]}

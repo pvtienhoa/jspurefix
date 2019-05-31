@@ -1,0 +1,1 @@
+{"version":3,"file":"settl_rate_fallback_rate_source.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/settl_rate_fallback_rate_source.ts"],"names":[],"mappings":"","sourcesContent":["export interface ISettlRateFallbackRateSource {\r\n  SettlRateFallbackRateSource?: number// 40373\r\n  SettlRateFallbackReferencePage?: string// 40655\r\n}\r\n"]}

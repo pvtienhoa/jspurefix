@@ -1,0 +1,1 @@
+{"version":3,"file":"make-fixl-session.js","sourceRoot":"","sources":["../../src/transport/make-fixl-session.ts"],"names":[],"mappings":"","sourcesContent":["import { IJsFixConfig } from '../config'\r\nimport { FixSession } from './fix-session'\r\n\r\nexport interface MakeFixSession { (config: IJsFixConfig): FixSession\r\n}\r\n"]}

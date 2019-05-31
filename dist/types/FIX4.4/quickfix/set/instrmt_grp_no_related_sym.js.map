@@ -1,0 +1,1 @@
+{"version":3,"file":"instrmt_grp_no_related_sym.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/instrmt_grp_no_related_sym.ts"],"names":[],"mappings":"","sourcesContent":["import { IInstrument } from './instrument'\r\n\r\nexport interface IInstrmtGrpNoRelatedSym {\r\n  Instrument?: IInstrument\r\n}\r\n"]}

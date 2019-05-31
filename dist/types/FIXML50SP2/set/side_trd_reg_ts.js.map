@@ -1,0 +1,1 @@
+{"version":3,"file":"side_trd_reg_ts.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/side_trd_reg_ts.ts"],"names":[],"mappings":"","sourcesContent":["export interface ISideTrdRegTS {\r\n  SideTrdRegTimestamp?: Date// 1012\r\n  SideTrdRegTimestampType?: number// 1013\r\n  SideTrdRegTimestampSrc?: string// 1014\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"side_cross_ord_cxl_grp.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/side_cross_ord_cxl_grp.ts"],"names":[],"mappings":"","sourcesContent":["import { ISideCrossOrdCxlGrpNoSides } from './side_cross_ord_cxl_grp_no_sides'\r\n\r\nexport interface ISideCrossOrdCxlGrp {\r\n  NoSides: ISideCrossOrdCxlGrpNoSides[]\r\n}\r\n"]}

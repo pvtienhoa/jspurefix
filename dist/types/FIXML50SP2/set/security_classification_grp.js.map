@@ -1,0 +1,1 @@
+{"version":3,"file":"security_classification_grp.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/security_classification_grp.ts"],"names":[],"mappings":"","sourcesContent":["export interface ISecurityClassificationGrp {\r\n  SecurityClassificationReason?: number// 1583\r\n  SecurityClassificationValue?: string// 1584\r\n}\r\n"]}

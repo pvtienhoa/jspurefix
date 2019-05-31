@@ -1,0 +1,1 @@
+{"version":3,"file":"instrmt_leg_grp_no_legs.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/instrmt_leg_grp_no_legs.ts"],"names":[],"mappings":"","sourcesContent":["import { IInstrumentLeg } from './instrument_leg'\r\n\r\nexport interface IInstrmtLegGrpNoLegs {\r\n  InstrumentLeg?: IInstrumentLeg\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"quot_entry_grp.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/quot_entry_grp.ts"],"names":[],"mappings":"","sourcesContent":["import { IQuotEntryGrpNoQuoteEntries } from './quot_entry_grp_no_quote_entries'\r\n\r\nexport interface IQuotEntryGrp {\r\n  NoQuoteEntries: IQuotEntryGrpNoQuoteEntries[]\r\n}\r\n"]}

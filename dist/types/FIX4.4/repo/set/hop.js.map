@@ -1,0 +1,1 @@
+{"version":3,"file":"hop.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/repo/set/hop.ts"],"names":[],"mappings":"","sourcesContent":["export interface IHop {\r\n  NoHops?: number        // 627\r\n  HopCompID?: string// 628\r\n  HopSendingTime?: Date// 629\r\n  HopRefID?: number// 630\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"ioi_qual_grp.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/ioi_qual_grp.ts"],"names":[],"mappings":"","sourcesContent":["export interface IIOIQualGrp {\r\n  IOIQualifier?: string// 104\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"compiler-settings.js","sourceRoot":"","sources":["../../../src/dictionary/compiler/compiler-settings.ts"],"names":[],"mappings":"","sourcesContent":["export interface ICompilerSettings {\r\n  standard: boolean,\r\n  spaces: number,\r\n  comment: boolean,\r\n  tags: true,\r\n  output: string,\r\n  types?: string[]\r\n}\r\n"]}

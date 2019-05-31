@@ -1,0 +1,1 @@
+{"version":3,"file":"rate_source.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/rate_source.ts"],"names":[],"mappings":"","sourcesContent":["export interface IRateSource {\r\n  RateSource?: number// 1446\r\n  RateSourceType?: number// 1447\r\n  ReferencePage?: string// 1448\r\n  RateSourceReferemcePageHeading?: string// 2412\r\n}\r\n"]}

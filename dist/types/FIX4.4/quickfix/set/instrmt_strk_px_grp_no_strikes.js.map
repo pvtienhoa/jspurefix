@@ -1,0 +1,1 @@
+{"version":3,"file":"instrmt_strk_px_grp_no_strikes.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/instrmt_strk_px_grp_no_strikes.ts"],"names":[],"mappings":"","sourcesContent":["import { IInstrument } from './instrument'\r\n\r\nexport interface IInstrmtStrkPxGrpNoStrikes {\r\n  Instrument: IInstrument\r\n}\r\n"]}

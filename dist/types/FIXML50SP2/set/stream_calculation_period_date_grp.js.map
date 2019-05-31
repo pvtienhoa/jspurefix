@@ -1,0 +1,1 @@
+{"version":3,"file":"stream_calculation_period_date_grp.js","sourceRoot":"","sources":["../../../../src/types/FIXML50SP2/set/stream_calculation_period_date_grp.ts"],"names":[],"mappings":"","sourcesContent":["export interface IStreamCalculationPeriodDateGrp {\r\n  StreamCalculationPeriodDate?: Date// 41242\r\n  StreamCalculationPeriodDateType?: number// 41243\r\n}\r\n"]}

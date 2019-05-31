@@ -1,0 +1,1 @@
+{"version":3,"file":"trd_cap_rpt_side_grp.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/trd_cap_rpt_side_grp.ts"],"names":[],"mappings":"","sourcesContent":["import { ITrdCapRptSideGrpNoSides } from './trd_cap_rpt_side_grp_no_sides'\r\n\r\nexport interface ITrdCapRptSideGrp {\r\n  NoSides: ITrdCapRptSideGrpNoSides[]\r\n}\r\n"]}

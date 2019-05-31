@@ -1,0 +1,1 @@
+{"version":3,"file":"bid_comp_req_grp.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/bid_comp_req_grp.ts"],"names":[],"mappings":"","sourcesContent":["import { IBidCompReqGrpNoBidComponents } from './bid_comp_req_grp_no_bid_components'\r\n\r\nexport interface IBidCompReqGrp {\r\n  NoBidComponents?: IBidCompReqGrpNoBidComponents[]\r\n}\r\n"]}
