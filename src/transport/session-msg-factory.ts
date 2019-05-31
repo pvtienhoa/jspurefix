@@ -84,8 +84,12 @@ export class SessionMsgFactory implements ISessionMsgFactory {
   }
 
   public trailer (checksum: number): ILooseObject {
+    let width = 3 - checksum.toString().length;
+    let ret = ''
+    if (width > 0) ret = new Array(width + (/\./.test(checksum.toString()) ? 2 : 1)).join('0') + checksum
+    else ret = checksum.toString()
     return {
-      CheckSum: checksum.toString()
+      CheckSum: ret
     } as IStandardTrailer
   }
 
