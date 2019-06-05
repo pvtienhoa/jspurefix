@@ -1,0 +1,1 @@
+{"version":3,"file":"list_strike_price_no_strikes.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/list_strike_price_no_strikes.ts"],"names":[],"mappings":"","sourcesContent":["import { IInstrument } from './instrument'\r\n\r\nexport interface IListStrikePriceNoStrikes {\r\n  Instrument: IInstrument\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"resend_request.js","sourceRoot":"","sources":["../../../../src/types/FIXFXCM/quickfix/resend_request.ts"],"names":[],"mappings":"","sourcesContent":["export interface IResendRequest {\r\n  BeginSeqNo: number// 7\r\n  EndSeqNo: number// 16\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"instrument_no_security_alt_id.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/instrument_no_security_alt_id.ts"],"names":[],"mappings":"","sourcesContent":["export interface IInstrumentNoSecurityAltID {\r\n  SecurityAltID?: string// 455\r\n  SecurityAltIDSource?: string// 456\r\n}\r\n"]}

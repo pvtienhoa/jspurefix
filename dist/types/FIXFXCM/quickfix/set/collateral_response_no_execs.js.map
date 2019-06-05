@@ -1,0 +1,1 @@
+{"version":3,"file":"collateral_response_no_execs.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/collateral_response_no_execs.ts"],"names":[],"mappings":"","sourcesContent":["export interface ICollateralResponseNoExecs {\r\n  ExecID?: string// 17\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"evnt_grp_no_events.js","sourceRoot":"","sources":["../../../src/types/FIX4.4/evnt_grp_no_events.ts"],"names":[],"mappings":"","sourcesContent":["export interface IEvntGrpNoEvents {\n  EventType?: number// 865\n  EventDate?: Date// 866\n  EventPx?: number// 867\n  EventText?: string// 868\n}\n"]}

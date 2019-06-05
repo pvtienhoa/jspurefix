@@ -1,0 +1,1 @@
+{"version":3,"file":"indication_of_interest_no_routing_i_ds.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/indication_of_interest_no_routing_i_ds.ts"],"names":[],"mappings":"","sourcesContent":["export interface IIndicationOfInterestNoRoutingIDs {\r\n  RoutingType?: number// 216\r\n  RoutingID?: string// 217\r\n}\r\n"]}

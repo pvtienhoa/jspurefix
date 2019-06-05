@@ -1,0 +1,1 @@
+{"version":3,"file":"user_request_fxcm_no_param.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/user_request_fxcm_no_param.ts"],"names":[],"mappings":"","sourcesContent":["export interface IUserRequestFXCMNoParam {\r\n  FXCMParamName?: string// 9017\r\n  FXCMParamValue?: string// 9018\r\n}\r\n"]}

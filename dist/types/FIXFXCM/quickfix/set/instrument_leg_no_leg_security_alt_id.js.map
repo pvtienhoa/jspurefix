@@ -1,0 +1,1 @@
+{"version":3,"file":"instrument_leg_no_leg_security_alt_id.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/instrument_leg_no_leg_security_alt_id.ts"],"names":[],"mappings":"","sourcesContent":["export interface IInstrumentLegNoLegSecurityAltID {\r\n  LegSecurityAltID?: string// 605\r\n  LegSecurityAltIDSource?: string// 606\r\n}\r\n"]}

@@ -1,0 +1,46 @@
+/// <reference types="node" />
+import { IParties } from './set/parties';
+import { IInstrument } from './set/instrument';
+import { IInstrumentExtension } from './set/instrument_extension';
+import { IFinancingDetails } from './set/financing_details';
+import { ITradeCaptureReportRequestNoUnderlyings } from './set/trade_capture_report_request_no_underlyings';
+import { ITradeCaptureReportRequestNoLegs } from './set/trade_capture_report_request_no_legs';
+import { ITradeCaptureReportRequestNoDates } from './set/trade_capture_report_request_no_dates';
+export interface ITradeCaptureReportRequest {
+    TradeRequestID: string;
+    TradeRequestType: number;
+    SubscriptionRequestType?: string;
+    TradeReportID?: string;
+    SecondaryTradeReportID?: string;
+    ExecID?: string;
+    ExecType?: string;
+    OrderID?: string;
+    ClOrdID?: string;
+    MatchStatus?: string;
+    TrdType?: number;
+    TrdSubType?: number;
+    TransferReason?: string;
+    SecondaryTrdType?: number;
+    TradeLinkID?: string;
+    TrdMatchID?: string;
+    Parties?: IParties;
+    Instrument?: IInstrument;
+    InstrumentExtension?: IInstrumentExtension;
+    FinancingDetails?: IFinancingDetails;
+    NoUnderlyings?: ITradeCaptureReportRequestNoUnderlyings[];
+    NoLegs?: ITradeCaptureReportRequestNoLegs[];
+    NoDates?: ITradeCaptureReportRequestNoDates[];
+    ClearingBusinessDate?: Date;
+    TradingSessionID?: string;
+    TradingSessionSubID?: string;
+    TimeBracket?: string;
+    Side?: string;
+    MultiLegReportingType?: string;
+    TradeInputSource?: string;
+    TradeInputDevice?: string;
+    ResponseTransportType?: number;
+    ResponseDestination?: string;
+    Text?: string;
+    EncodedTextLen?: number;
+    EncodedText?: Buffer;
+}

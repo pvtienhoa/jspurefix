@@ -1,0 +1,1 @@
+{"version":3,"file":"stipulations.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/stipulations.ts"],"names":[],"mappings":"","sourcesContent":["import { IStipulationsNoStipulations } from './stipulations_no_stipulations'\r\n\r\nexport interface IStipulations {\r\n  NoStipulations?: IStipulationsNoStipulations[]\r\n}\r\n"]}

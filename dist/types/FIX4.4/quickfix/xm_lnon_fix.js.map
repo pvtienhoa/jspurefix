@@ -1,1 +1,1 @@
-{"version":3,"file":"xm_lnon_fix.js","sourceRoot":"","sources":["../../../../src/types/FIX4.4/quickfix/xm_lnon_fix.ts"],"names":[],"mappings":"","sourcesContent":["export interface IXMLnonFIX {\r\n}\r\n"]}
+{"version":3,"file":"xm_lnon_fix.js","sourceRoot":"","sources":["../../../../src/types/FIX4.4/quickfix/xm_lnon_fix.ts"],"names":[],"mappings":"","sourcesContent":["export interface IXMLnonFIX {\n}\n"]}

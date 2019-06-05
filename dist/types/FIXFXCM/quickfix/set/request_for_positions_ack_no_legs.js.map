@@ -1,0 +1,1 @@
+{"version":3,"file":"request_for_positions_ack_no_legs.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/request_for_positions_ack_no_legs.ts"],"names":[],"mappings":"","sourcesContent":["import { IInstrumentLeg } from './instrument_leg'\r\n\r\nexport interface IRequestForPositionsAckNoLegs {\r\n  InstrumentLeg?: IInstrumentLeg\r\n}\r\n"]}

@@ -1,0 +1,30 @@
+import { IInstrument } from './instrument';
+import { IFinancingDetails } from './financing_details';
+import { IQuoteRequestRejectNoRelatedSymNoUnderlyings } from './quote_request_reject_no_related_sym_no_underlyings';
+import { IOrderQtyData } from './order_qty_data';
+import { IStipulations } from './stipulations';
+import { IQuoteRequestRejectNoRelatedSymNoLegs } from './quote_request_reject_no_related_sym_no_legs';
+export interface IQuoteRequestRejectNoRelatedSym {
+    Instrument: IInstrument;
+    FinancingDetails: IFinancingDetails;
+    NoUnderlyings?: IQuoteRequestRejectNoRelatedSymNoUnderlyings[];
+    PrevClosePx?: number;
+    QuoteRequestType?: number;
+    QuoteType?: number;
+    TradingSessionID?: string;
+    TradingSessionSubID?: string;
+    TradeOriginationDate?: Date;
+    Side?: string;
+    QtyType?: number;
+    OrderQtyData: IOrderQtyData;
+    SettlType?: string;
+    SettlDate?: Date;
+    SettlDate2?: Date;
+    OrderQty2?: number;
+    Currency?: number;
+    Stipulations: IStipulations;
+    Account?: string;
+    AcctIDSource?: number;
+    AccountType?: number;
+    NoLegs?: IQuoteRequestRejectNoRelatedSymNoLegs[];
+}

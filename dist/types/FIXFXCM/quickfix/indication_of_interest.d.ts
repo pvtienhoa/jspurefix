@@ -1,0 +1,40 @@
+/// <reference types="node" />
+import { IInstrument } from './set/instrument';
+import { IFinancingDetails } from './set/financing_details';
+import { IIndicationOfInterestNoUnderlyings } from './set/indication_of_interest_no_underlyings';
+import { IOrderQtyData } from './set/order_qty_data';
+import { IStipulations } from './set/stipulations';
+import { IIndicationOfInterestNoLegs } from './set/indication_of_interest_no_legs';
+import { IIndicationOfInterestNoIOIQualifiers } from './set/indication_of_interest_no_ioi_qualifiers';
+import { IIndicationOfInterestNoRoutingIDs } from './set/indication_of_interest_no_routing_i_ds';
+import { ISpreadOrBenchmarkCurveData } from './set/spread_or_benchmark_curve_data';
+import { IYieldData } from './set/yield_data';
+export interface IIndicationOfInterest {
+    IOIid: string;
+    IOITransType: string;
+    IOIRefID?: string;
+    Instrument?: IInstrument;
+    FinancingDetails?: IFinancingDetails;
+    NoUnderlyings?: IIndicationOfInterestNoUnderlyings[];
+    Side: string;
+    QtyType?: number;
+    OrderQtyData?: IOrderQtyData;
+    IOIQty: string;
+    Currency?: number;
+    Stipulations?: IStipulations;
+    NoLegs?: IIndicationOfInterestNoLegs[];
+    PriceType?: number;
+    Price?: number;
+    ValidUntilTime?: Date;
+    IOIQltyInd?: string;
+    IOINaturalFlag?: boolean;
+    NoIOIQualifiers?: IIndicationOfInterestNoIOIQualifiers[];
+    Text?: string;
+    EncodedTextLen?: number;
+    EncodedText?: Buffer;
+    TransactTime?: Date;
+    URLLink?: string;
+    NoRoutingIDs?: IIndicationOfInterestNoRoutingIDs[];
+    SpreadOrBenchmarkCurveData?: ISpreadOrBenchmarkCurveData;
+    YieldData?: IYieldData;
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"confirmation_no_capacities.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/confirmation_no_capacities.ts"],"names":[],"mappings":"","sourcesContent":["export interface IConfirmationNoCapacities {\r\n  OrderCapacity: string// 528\r\n  OrderRestrictions?: string// 529\r\n  OrderCapacityQty: number// 863\r\n}\r\n"]}

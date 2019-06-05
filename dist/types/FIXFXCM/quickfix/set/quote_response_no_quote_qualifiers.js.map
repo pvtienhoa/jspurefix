@@ -1,0 +1,1 @@
+{"version":3,"file":"quote_response_no_quote_qualifiers.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/quote_response_no_quote_qualifiers.ts"],"names":[],"mappings":"","sourcesContent":["export interface IQuoteResponseNoQuoteQualifiers {\r\n  QuoteQualifier?: string// 695\r\n}\r\n"]}

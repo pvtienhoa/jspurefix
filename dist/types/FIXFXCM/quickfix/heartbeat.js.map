@@ -1,0 +1,1 @@
+{"version":3,"file":"heartbeat.js","sourceRoot":"","sources":["../../../../src/types/FIXFXCM/quickfix/heartbeat.ts"],"names":[],"mappings":"","sourcesContent":["export interface IHeartbeat {\r\n  TestReqID?: string// 112\r\n}\r\n"]}

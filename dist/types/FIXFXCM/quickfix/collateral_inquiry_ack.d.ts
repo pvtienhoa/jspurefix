@@ -1,0 +1,46 @@
+/// <reference types="node" />
+import { ICollateralInquiryAckNoCollInquiryQualifier } from './set/collateral_inquiry_ack_no_coll_inquiry_qualifier';
+import { IParties } from './set/parties';
+import { ICollateralInquiryAckNoExecs } from './set/collateral_inquiry_ack_no_execs';
+import { ICollateralInquiryAckNoTrades } from './set/collateral_inquiry_ack_no_trades';
+import { IInstrument } from './set/instrument';
+import { IFinancingDetails } from './set/financing_details';
+import { IInstrumentLeg } from './set/instrument_leg';
+import { ICollateralInquiryAckNoUnderlyings } from './set/collateral_inquiry_ack_no_underlyings';
+export interface ICollateralInquiryAck {
+    CollInquiryID: string;
+    CollInquiryStatus: number;
+    CollInquiryResult?: number;
+    NoCollInquiryQualifier?: ICollateralInquiryAckNoCollInquiryQualifier[];
+    TotNumReports?: number;
+    Parties?: IParties;
+    Account?: string;
+    AccountType?: number;
+    ClOrdID?: string;
+    OrderID?: string;
+    SecondaryOrderID?: string;
+    SecondaryClOrdID?: string;
+    NoExecs?: ICollateralInquiryAckNoExecs[];
+    NoTrades?: ICollateralInquiryAckNoTrades[];
+    Instrument?: IInstrument;
+    FinancingDetails?: IFinancingDetails;
+    SettlDate?: Date;
+    Quantity?: number;
+    QtyType?: number;
+    Currency?: number;
+    NoLegs?: number;
+    InstrumentLeg?: IInstrumentLeg;
+    NoUnderlyings?: ICollateralInquiryAckNoUnderlyings[];
+    TradingSessionID?: string;
+    TradingSessionSubID?: string;
+    SettlSessID?: string;
+    SettlSessSubID?: string;
+    ClearingBusinessDate?: Date;
+    ResponseTransportType?: number;
+    ResponseDestination?: string;
+    Text?: string;
+    EncodedTextLen?: number;
+    EncodedText?: Buffer;
+    FXCMRequestRejectReason?: number;
+    FXCMErrorDetails?: string;
+}

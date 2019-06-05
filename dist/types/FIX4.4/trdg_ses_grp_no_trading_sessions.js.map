@@ -1,0 +1,1 @@
+{"version":3,"file":"trdg_ses_grp_no_trading_sessions.js","sourceRoot":"","sources":["../../../src/types/FIX4.4/trdg_ses_grp_no_trading_sessions.ts"],"names":[],"mappings":"","sourcesContent":["export interface ITrdgSesGrpNoTradingSessions {\n  TradingSessionID?: string// 336\n  TradingSessionSubID?: string// 625\n}\n"]}

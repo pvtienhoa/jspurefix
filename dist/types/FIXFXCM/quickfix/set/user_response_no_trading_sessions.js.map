@@ -1,0 +1,1 @@
+{"version":3,"file":"user_response_no_trading_sessions.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/user_response_no_trading_sessions.ts"],"names":[],"mappings":"","sourcesContent":["export interface IUserResponseNoTradingSessions {\r\n  TradingSessionID?: string// 336\r\n  TradingSessionSubID?: string// 625\r\n}\r\n"]}

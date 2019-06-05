@@ -1,0 +1,1 @@
+{"version":3,"file":"market_data_request_reject_no_alt_md_source.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/market_data_request_reject_no_alt_md_source.ts"],"names":[],"mappings":"","sourcesContent":["export interface IMarketDataRequestRejectNoAltMDSource {\r\n  AltMDSourceID?: string// 817\r\n}\r\n"]}

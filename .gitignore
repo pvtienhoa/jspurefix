@@ -63,6 +63,3 @@ typings/
 .next
 
 # compiled sample javascript
-dist/sample/
-
-data/fix_repo

@@ -1,1 +1,1 @@
-{"version":3,"file":"sequence_reset.js","sourceRoot":"","sources":["../../../../src/types/FIX4.4/quickfix/sequence_reset.ts"],"names":[],"mappings":"","sourcesContent":["export interface ISequenceReset {\r\n  GapFillFlag?: boolean// 123\r\n  NewSeqNo: number// 36\r\n}\r\n"]}
+{"version":3,"file":"sequence_reset.js","sourceRoot":"","sources":["../../../../src/types/FIX4.4/quickfix/sequence_reset.ts"],"names":[],"mappings":"","sourcesContent":["export interface ISequenceReset {\n  GapFillFlag?: boolean// 123\n  NewSeqNo: number// 36\n}\n"]}

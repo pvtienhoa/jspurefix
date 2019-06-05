@@ -1,0 +1,1 @@
+{"version":3,"file":"affected_ord_grp_no_affected_orders.js","sourceRoot":"","sources":["../../../src/types/FIX4.4/affected_ord_grp_no_affected_orders.ts"],"names":[],"mappings":"","sourcesContent":["export interface IAffectedOrdGrpNoAffectedOrders {\n  OrigClOrdID?: string// 41\n  AffectedOrderID?: string// 535\n  AffectedSecondaryOrderID?: string// 536\n}\n"]}

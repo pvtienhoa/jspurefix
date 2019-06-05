@@ -1,0 +1,1 @@
+{"version":3,"file":"logon_no_msg_types.js","sourceRoot":"","sources":["../../../src/types/FIX4.4/logon_no_msg_types.ts"],"names":[],"mappings":"","sourcesContent":["export interface ILogonNoMsgTypes {\n  RefMsgType?: string// 372\n  MsgDirection?: string// 385\n}\n"]}

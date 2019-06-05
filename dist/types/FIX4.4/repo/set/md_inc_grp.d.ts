@@ -46,4 +46,5 @@ export interface IMDIncGrp {
     Text?: string;
     EncodedTextLen?: number;
     EncodedText?: Buffer;
+    QuoteType?: number;
 }

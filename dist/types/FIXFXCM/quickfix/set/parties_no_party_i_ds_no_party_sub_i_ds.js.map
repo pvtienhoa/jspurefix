@@ -1,0 +1,1 @@
+{"version":3,"file":"parties_no_party_i_ds_no_party_sub_i_ds.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/parties_no_party_i_ds_no_party_sub_i_ds.ts"],"names":[],"mappings":"","sourcesContent":["export interface IPartiesNoPartyIDsNoPartySubIDs {\r\n  PartySubID?: string// 523\r\n  PartySubIDType?: number// 803\r\n}\r\n"]}

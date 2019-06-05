@@ -1,0 +1,1 @@
+{"version":3,"file":"news_no_underlyings.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/news_no_underlyings.ts"],"names":[],"mappings":"","sourcesContent":["import { IUnderlyingInstrument } from './underlying_instrument'\r\n\r\nexport interface INewsNoUnderlyings {\r\n  UnderlyingInstrument?: IUnderlyingInstrument\r\n}\r\n"]}

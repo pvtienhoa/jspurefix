@@ -1,0 +1,1 @@
+{"version":3,"file":"indication_of_interest_no_ioi_qualifiers.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/indication_of_interest_no_ioi_qualifiers.ts"],"names":[],"mappings":"","sourcesContent":["export interface IIndicationOfInterestNoIOIQualifiers {\r\n  IOIQualifier?: string// 104\r\n}\r\n"]}

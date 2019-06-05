@@ -1,0 +1,1 @@
+{"version":3,"file":"email_no_routing_i_ds.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/email_no_routing_i_ds.ts"],"names":[],"mappings":"","sourcesContent":["export interface IEmailNoRoutingIDs {\r\n  RoutingType?: number// 216\r\n  RoutingID?: string// 217\r\n}\r\n"]}

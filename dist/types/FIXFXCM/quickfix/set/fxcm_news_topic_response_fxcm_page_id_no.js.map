@@ -1,0 +1,1 @@
+{"version":3,"file":"fxcm_news_topic_response_fxcm_page_id_no.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/fxcm_news_topic_response_fxcm_page_id_no.ts"],"names":[],"mappings":"","sourcesContent":["export interface IFXCMNewsTopicResponseFXCMPageIDNo {\r\n  FXCMPageID: string// 9022\r\n  Headline?: string// 148\r\n}\r\n"]}

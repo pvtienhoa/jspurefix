@@ -1,0 +1,1 @@
+{"version":3,"file":"instrument_extension_no_instr_attrib.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/instrument_extension_no_instr_attrib.ts"],"names":[],"mappings":"","sourcesContent":["export interface IInstrumentExtensionNoInstrAttrib {\r\n  InstrAttribType?: number// 871\r\n  InstrAttribValue?: string// 872\r\n}\r\n"]}

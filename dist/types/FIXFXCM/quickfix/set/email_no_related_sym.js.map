@@ -1,0 +1,1 @@
+{"version":3,"file":"email_no_related_sym.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/email_no_related_sym.ts"],"names":[],"mappings":"","sourcesContent":["import { IInstrument } from './instrument'\r\n\r\nexport interface IEmailNoRelatedSym {\r\n  Instrument?: IInstrument\r\n}\r\n"]}

@@ -1,1 +1,1 @@
-{"version":3,"file":"instrmt_grp.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/repo/set/instrmt_grp.ts"],"names":[],"mappings":"","sourcesContent":["import { IInstrument } from './instrument'\r\n\r\nexport interface IInstrmtGrp {\r\n  Instrument?: IInstrument\r\n}\r\n"]}
+{"version":3,"file":"instrmt_grp.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/repo/set/instrmt_grp.ts"],"names":[],"mappings":"","sourcesContent":["import { IInstrument } from './instrument'\n\nexport interface IInstrmtGrp {\n  Instrument?: IInstrument\n}\n"]}

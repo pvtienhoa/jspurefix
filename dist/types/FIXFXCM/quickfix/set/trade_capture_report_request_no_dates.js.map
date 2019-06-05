@@ -1,0 +1,1 @@
+{"version":3,"file":"trade_capture_report_request_no_dates.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/trade_capture_report_request_no_dates.ts"],"names":[],"mappings":"","sourcesContent":["export interface ITradeCaptureReportRequestNoDates {\r\n  TradeDate?: Date// 75\r\n  TransactTime?: Date// 60\r\n}\r\n"]}

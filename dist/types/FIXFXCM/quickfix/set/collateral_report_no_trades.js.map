@@ -1,0 +1,1 @@
+{"version":3,"file":"collateral_report_no_trades.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/collateral_report_no_trades.ts"],"names":[],"mappings":"","sourcesContent":["export interface ICollateralReportNoTrades {\r\n  TradeReportID?: string// 571\r\n  SecondaryTradeReportID?: string// 818\r\n}\r\n"]}

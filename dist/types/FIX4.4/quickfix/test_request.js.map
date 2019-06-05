@@ -1,1 +1,1 @@
-{"version":3,"file":"test_request.js","sourceRoot":"","sources":["../../../../src/types/FIX4.4/quickfix/test_request.ts"],"names":[],"mappings":"","sourcesContent":["export interface ITestRequest {\r\n  TestReqID: string// 112\r\n}\r\n"]}
+{"version":3,"file":"test_request.js","sourceRoot":"","sources":["../../../../src/types/FIX4.4/quickfix/test_request.ts"],"names":[],"mappings":"","sourcesContent":["export interface ITestRequest {\n  TestReqID: string// 112\n}\n"]}

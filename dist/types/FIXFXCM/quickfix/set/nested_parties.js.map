@@ -1,0 +1,1 @@
+{"version":3,"file":"nested_parties.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/nested_parties.ts"],"names":[],"mappings":"","sourcesContent":["import { INestedPartiesNoNestedPartyIDs } from './nested_parties_no_nested_party_i_ds'\r\n\r\nexport interface INestedParties {\r\n  NoNestedPartyIDs?: INestedPartiesNoNestedPartyIDs[]\r\n}\r\n"]}

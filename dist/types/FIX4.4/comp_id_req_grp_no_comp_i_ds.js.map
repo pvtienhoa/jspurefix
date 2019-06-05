@@ -1,0 +1,1 @@
+{"version":3,"file":"comp_id_req_grp_no_comp_i_ds.js","sourceRoot":"","sources":["../../../src/types/FIX4.4/comp_id_req_grp_no_comp_i_ds.ts"],"names":[],"mappings":"","sourcesContent":["export interface ICompIDReqGrpNoCompIDs {\n  RefCompID?: string// 930\n  RefSubID?: string// 931\n  LocationID?: string// 283\n  DeskID?: string// 284\n}\n"]}

@@ -1,1 +1,1 @@
-{"version":3,"file":"md_rjct_grp_no_alt_md_source.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/md_rjct_grp_no_alt_md_source.ts"],"names":[],"mappings":"","sourcesContent":["export interface IMDRjctGrpNoAltMDSource {\r\n  AltMDSourceID?: string// 817\r\n}\r\n"]}
+{"version":3,"file":"md_rjct_grp_no_alt_md_source.js","sourceRoot":"","sources":["../../../../../src/types/FIX4.4/quickfix/set/md_rjct_grp_no_alt_md_source.ts"],"names":[],"mappings":"","sourcesContent":["export interface IMDRjctGrpNoAltMDSource {\n  AltMDSourceID?: string// 817\n}\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"position_amount_data.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/position_amount_data.ts"],"names":[],"mappings":"","sourcesContent":["import { IPositionAmountDataNoPosAmt } from './position_amount_data_no_pos_amt'\r\n\r\nexport interface IPositionAmountData {\r\n  NoPosAmt: IPositionAmountDataNoPosAmt[]\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"collateral_inquiry_no_coll_inquiry_qualifier.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/collateral_inquiry_no_coll_inquiry_qualifier.ts"],"names":[],"mappings":"","sourcesContent":["export interface ICollateralInquiryNoCollInquiryQualifier {\r\n  CollInquiryQualifier?: number// 896\r\n}\r\n"]}

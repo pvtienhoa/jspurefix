@@ -1,0 +1,1 @@
+{"version":3,"file":"cont_amt_grp.js","sourceRoot":"","sources":["../../../src/types/FIX4.4/cont_amt_grp.ts"],"names":[],"mappings":"","sourcesContent":["export interface IContAmtGrp {\n  ContAmtType?: number// 519\n  ContAmtValue?: number// 520\n  ContAmtCurr?: number// 521\n}\n"]}

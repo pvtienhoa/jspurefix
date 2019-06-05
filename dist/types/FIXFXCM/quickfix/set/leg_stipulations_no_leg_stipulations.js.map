@@ -1,0 +1,1 @@
+{"version":3,"file":"leg_stipulations_no_leg_stipulations.js","sourceRoot":"","sources":["../../../../../src/types/FIXFXCM/quickfix/set/leg_stipulations_no_leg_stipulations.ts"],"names":[],"mappings":"","sourcesContent":["export interface ILegStipulationsNoLegStipulations {\r\n  LegStipulationType?: string// 688\r\n  LegStipulationValue?: string// 689\r\n}\r\n"]}
