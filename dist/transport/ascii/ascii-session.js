@@ -149,11 +149,11 @@ class AsciiSession extends fix_session_1.FixSession {
     }
     onMsg(msgType, view) {
         if (!this.checkSeqNo(msgType, view)) {
-            this.sessionLogger.info(`message '${msgType}' failed checkSeqNo.`);
+            this.sessionLogger.debug(`message '${msgType}' failed checkSeqNo.`);
             return;
         }
         if (this.checkMsgIntegrity && !this.checkIntegrity(msgType, view)) {
-            this.sessionLogger.info(`message '${msgType}' failed checkIntegrity.`);
+            this.sessionLogger.debug(`message '${msgType}' failed checkIntegrity.`);
             switch (msgType) {
                 case enum_1.MsgType.Logon: {
                     this.sessionState.state = fix_session_state_1.SessionState.PeerLogonRejected;

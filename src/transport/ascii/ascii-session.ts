@@ -176,12 +176,12 @@ export abstract class AsciiSession extends FixSession {
   protected onMsg (msgType: string, view: MsgView): void {
 
     if (!this.checkSeqNo(msgType, view)) {
-      this.sessionLogger.info(`message '${msgType}' failed checkSeqNo.`)
+      this.sessionLogger.debug(`message '${msgType}' failed checkSeqNo.`)
       return
     }
 
     if (this.checkMsgIntegrity && !this.checkIntegrity(msgType, view)) {
-      this.sessionLogger.info(`message '${msgType}' failed checkIntegrity.`)
+      this.sessionLogger.debug(`message '${msgType}' failed checkIntegrity.`)
       switch (msgType) {
         case MsgType.Logon: {
           this.sessionState.state = SessionState.PeerLogonRejected
