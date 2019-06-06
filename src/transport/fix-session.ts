@@ -69,8 +69,8 @@ export abstract class FixSession {
     rx.on('msg', (msgType: string, view: MsgView) => {
       if (this.logReceivedMsgs) {
         const name = view.segment.type !== SegmentType.Unknown ? view.segment.set.name : 'unknown'
-        logger.info(`${msgType}: ${name}`)
-        logger.info(`${view.toString()}`)
+        logger.debug(`${msgType}: ${name}`)
+        logger.debug(`${view.toString()}`)
       }
       this.sessionState.lastReceivedAt = new Date()
       if (this.manageSession) {
@@ -105,7 +105,7 @@ export abstract class FixSession {
   }
 
   protected checkForwardMsg (msgType: string, view: MsgView): void {
-    this.sessionLogger.info(`forwarding msgType = '${msgType}' to application`)
+    this.sessionLogger.debug(`forwarding msgType = '${msgType}' to application`)
     this.onApplicationMsg(msgType, view)
   }
 
