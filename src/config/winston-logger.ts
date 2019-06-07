@@ -1,7 +1,7 @@
 import { IJsFixLogger } from './js-fix-logger'
 import { Logger } from 'winston'
 const { createLogger, format, transports } = require('winston')
-const { combine, timestamp, printf } = format
+const { combine, timestamp, printf, colorize } = format
 
 export class WinstonLogger {
   public static readonly appFormat = printf((info: any) => {
@@ -19,6 +19,7 @@ export class WinstonLogger {
   public static consoleOptions (level: string = 'debug'): any {
     return {
       format: combine(
+        colorize(),
         timestamp(),
         WinstonLogger.appFormat
       ),

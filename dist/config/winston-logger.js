@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const { createLogger, format, transports } = require('winston');
-const { combine, timestamp, printf } = format;
+const { combine, timestamp, printf, colorize } = format;
 class WinstonLogger {
     constructor(options = WinstonLogger.consoleOptions()) {
         this.options = options;
@@ -9,7 +9,7 @@ class WinstonLogger {
     }
     static consoleOptions(level = 'debug') {
         return {
-            format: combine(timestamp(), WinstonLogger.appFormat),
+            format: combine(colorize(), timestamp(), WinstonLogger.appFormat),
             level: level,
             transports: [
                 new transports.Console()
