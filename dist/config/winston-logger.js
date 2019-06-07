@@ -36,7 +36,7 @@ class WinstonLogger {
             maxSize: maxSize
         });
         const txtLogger = createLogger({
-            format: WinstonLogger.plainFormat,
+            format: combine(timestamp(), WinstonLogger.plainFormat),
             level: 'info',
             transports: [
                 trans
