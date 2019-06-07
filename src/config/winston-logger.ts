@@ -1,6 +1,7 @@
 import { IJsFixLogger } from './js-fix-logger'
 import { Logger } from 'winston'
 const { createLogger, format, transports } = require('winston')
+require('winston-daily-rotate-file')
 const { combine, timestamp, printf, colorize } = format
 
 export class WinstonLogger {
@@ -8,7 +9,7 @@ export class WinstonLogger {
     return `${info.timestamp} [${info.type}] ${info.level}: ${info.message}`
   })
   public static readonly plainFormat = printf((info: any) => {
-    return `${info.message}`
+    return `${info.timestamp} - ${info.message}`
   })
   private readonly appLogger: Logger
 
@@ -46,15 +47,17 @@ export class WinstonLogger {
     }
   }
 
-  public plain (fileName: string, maxSize: number = 10 * 1024 * 1024): IJsFixLogger {
+  public plain (fileName: string, maxSize: number = 100 * 1024 * 1024): IJsFixLogger {
+    var trans = new (transports.DailyRotateFile)({
+      filename: `${fileName}-%DATE%.log`,
+      datePattern: 'YYYYMMDD',
+      maxSize: maxSize
+    });
     const txtLogger: Logger = createLogger({
       format: WinstonLogger.plainFormat,
       level: 'info',
       transports: [
-        new transports.File({
-          filename: fileName,
-          maxsize: maxSize
-        })
+        trans
       ]
     })
 

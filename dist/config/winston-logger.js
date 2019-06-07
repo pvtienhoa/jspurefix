@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const { createLogger, format, transports } = require('winston');
+require('winston-daily-rotate-file');
 const { combine, timestamp, printf, colorize } = format;
 class WinstonLogger {
     constructor(options = WinstonLogger.consoleOptions()) {
@@ -28,15 +29,17 @@ class WinstonLogger {
             ]
         };
     }
-    plain(fileName, maxSize = 10 * 1024 * 1024) {
+    plain(fileName, maxSize = 100 * 1024 * 1024) {
+        var trans = new (transports.DailyRotateFile)({
+            filename: `${fileName}-%DATE%.log`,
+            datePattern: 'YYYYMMDD',
+            maxSize: maxSize
+        });
         const txtLogger = createLogger({
             format: WinstonLogger.plainFormat,
             level: 'info',
             transports: [
-                new transports.File({
-                    filename: fileName,
-                    maxsize: maxSize
-                })
+                trans
             ]
         });
         return {
@@ -93,7 +96,7 @@ WinstonLogger.appFormat = printf((info) => {
     return `${info.timestamp} [${info.type}] ${info.level}: ${info.message}`;
 });
 WinstonLogger.plainFormat = printf((info) => {
-    return `${info.message}`;
+    return `${info.timestamp} - ${info.message}`;
 });
 exports.WinstonLogger = WinstonLogger;
 //# sourceMappingURL=winston-logger.js.map
