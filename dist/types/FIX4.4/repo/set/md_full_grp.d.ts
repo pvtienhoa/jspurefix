@@ -34,4 +34,5 @@ export interface IMDFullGrp {
     EncodedTextLen?: number;
     EncodedText?: Buffer;
     QuoteType?: number;
+    Issuer?: string;
 }

@@ -22052,11 +22052,18 @@ See Volume 1: FIXML Support</Description>
 		<Position>34</Position>
 		<Reqd>0</Reqd>
 	</MsgContent>
-		<MsgContent added="FIX.4.4">
+	<MsgContent added="FIX.4.4">
 		<ComponentID>2031</ComponentID>
 		<TagText>537</TagText>
 		<Indent>1</Indent>
-		<Position>47</Position>
+		<Position>35</Position>
+		<Reqd>0</Reqd>
+	</MsgContent>
+	<MsgContent added="FIX.4.4">
+		<ComponentID>2031</ComponentID>
+		<TagText>106</TagText>
+		<Indent>1</Indent>
+		<Position>36</Position>
 		<Reqd>0</Reqd>
 	</MsgContent>
 	<MsgContent added="FIX.4.4">
@@ -22372,6 +22379,13 @@ See Volume 1: FIXML Support</Description>
 		<TagText>537</TagText>
 		<Indent>1</Indent>
 		<Position>47</Position>
+		<Reqd>0</Reqd>
+	</MsgContent>
+	<MsgContent added="FIX.4.4">
+		<ComponentID>2031</ComponentID>
+		<TagText>106</TagText>
+		<Indent>1</Indent>
+		<Position>48</Position>
 		<Reqd>0</Reqd>
 	</MsgContent>
 	<MsgContent added="FIX.4.4">
