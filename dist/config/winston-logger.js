@@ -29,19 +29,32 @@ class WinstonLogger {
             ]
         };
     }
-    plain(fileName, maxSize = 100 * 1024 * 1024) {
+    plain(fileName, maxSize = 100 * 1024 * 1024, haveTimeStamp = false) {
         var trans = new (transports.DailyRotateFile)({
-            filename: `${fileName}-%DATE%.log`,
+            filename: `${fileName}.%DATE%.log`,
             datePattern: 'YYYYMMDD',
             maxSize: maxSize
         });
-        const txtLogger = createLogger({
-            format: combine(timestamp(), WinstonLogger.plainFormat),
-            level: 'info',
-            transports: [
-                trans
-            ]
-        });
+        var txtLogger;
+        if (haveTimeStamp) {
+            txtLogger = createLogger({
+                format: combine(timestamp(), WinstonLogger.plainTimeStampFormat),
+                level: 'info',
+                transports: [
+                    trans
+                ]
+            });
+        }
+        else {
+            txtLogger = createLogger({
+                format: WinstonLogger.plainFormat,
+                level: 'info',
+                transports: [
+                    trans
+                ]
+            });
+        }
+        ;
         return {
             log: function (txt) {
                 txtLogger.info({
@@ -95,8 +108,11 @@ class WinstonLogger {
 WinstonLogger.appFormat = printf((info) => {
     return `${info.timestamp} [${info.type}] ${info.level}: ${info.message}`;
 });
-WinstonLogger.plainFormat = printf((info) => {
+WinstonLogger.plainTimeStampFormat = printf((info) => {
     return `${info.timestamp} - ${info.message}`;
+});
+WinstonLogger.plainFormat = printf((info) => {
+    return `${info.message}`;
 });
 exports.WinstonLogger = WinstonLogger;
 //# sourceMappingURL=winston-logger.js.map

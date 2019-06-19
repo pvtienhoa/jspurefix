@@ -8,16 +8,19 @@ export class WinstonLogger {
   public static readonly appFormat = printf((info: any) => {
     return `${info.timestamp} [${info.type}] ${info.level}: ${info.message}`
   })
-  public static readonly plainFormat = printf((info: any) => {
+  public static readonly plainTimeStampFormat = printf((info: any) => {
     return `${info.timestamp} - ${info.message}`
+  })
+  public static readonly plainFormat = printf((info: any) => {
+    return `${info.message}`
   })
   private readonly appLogger: Logger
 
-  constructor (public readonly options: any = WinstonLogger.consoleOptions()) {
+  constructor(public readonly options: any = WinstonLogger.consoleOptions()) {
     this.appLogger = createLogger(options)
   }
 
-  public static consoleOptions (level: string = 'debug'): any {
+  public static consoleOptions(level: string = 'debug'): any {
     return {
       format: combine(
         colorize(),
@@ -31,7 +34,7 @@ export class WinstonLogger {
     }
   }
 
-  public static fileOptions (fileName: string, level: string = 'debug', maxSize: number = 50 * 1024 * 1024, format: any = combine(
+  public static fileOptions(fileName: string, level: string = 'debug', maxSize: number = 50 * 1024 * 1024, format: any = combine(
     timestamp(),
     WinstonLogger.appFormat
   )): any {
@@ -47,23 +50,33 @@ export class WinstonLogger {
     }
   }
 
-  public plain (fileName: string, maxSize: number = 100 * 1024 * 1024): IJsFixLogger {
+  public plain(fileName: string, maxSize: number = 100 * 1024 * 1024, haveTimeStamp: boolean = false): IJsFixLogger {
     var trans = new (transports.DailyRotateFile)({
-      filename: `${fileName}-%DATE%.log`,
+      filename: `${fileName}.%DATE%.log`,
       datePattern: 'YYYYMMDD',
       maxSize: maxSize
     });
-    const txtLogger: Logger = createLogger({
-      format: combine(
-        timestamp(),
-        WinstonLogger.plainFormat
+    var txtLogger: Logger;
+    if (haveTimeStamp) {
+      txtLogger = createLogger({
+        format: combine(
+          timestamp(),
+          WinstonLogger.plainTimeStampFormat
         ),
-      level: 'info',
-      transports: [
-        trans
-      ]
-    })
-
+        level: 'info',
+        transports: [
+          trans
+        ]
+      })
+    } else {
+      txtLogger = createLogger({
+        format: WinstonLogger.plainFormat,
+        level: 'info',
+        transports: [
+          trans
+        ]
+      })
+    };
     return {
       log: function (txt: string) {
         txtLogger.info({
@@ -87,7 +100,7 @@ export class WinstonLogger {
     } as IJsFixLogger
   }
 
-  public make (type: string): IJsFixLogger {
+  public make(type: string): IJsFixLogger {
     const logger = this.appLogger
     return {
       info: function (msg: string): void {
