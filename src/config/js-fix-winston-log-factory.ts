@@ -13,7 +13,7 @@ export class JsFixWinstonLogFactory extends JsFixLoggerFactory {
   public logger(type: string): IJsFixLogger {
     return this.wl.make(type)
   }
-  public plain(fileName: string, maxSize?: number, haveTimeStamp?: boolean, isZipped?: boolean, maxFile?: number): IJsFixLogger {
+  public plain(fileName: string, maxSize?: number, haveTimeStamp?: boolean, isZipped?: boolean, maxFile?: number, dirName?: string): IJsFixLogger {
     return this.wl.plain(fileName, maxSize, haveTimeStamp, isZipped, maxFile)
   }
 }

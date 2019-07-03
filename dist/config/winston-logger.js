@@ -29,9 +29,10 @@ class WinstonLogger {
             ]
         };
     }
-    plain(fileName, maxSize = 100 * 1024 * 1024, haveTimeStamp = false, isZipped = true, maxFile = 7) {
+    plain(fileName, maxSize = 100 * 1024 * 1024, haveTimeStamp = false, isZipped = true, maxFile = 7, dirName = '.') {
         var trans = new (transports.DailyRotateFile)({
             filename: `${fileName}.%DATE%.log`,
+            dirname: dirName,
             datePattern: 'YYYYMMDD',
             zippedArchive: isZipped,
             maxSize: maxSize,

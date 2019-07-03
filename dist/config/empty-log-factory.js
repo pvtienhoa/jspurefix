@@ -6,7 +6,7 @@ class EmptyLogFactory extends js_fix_logger_factory_1.JsFixLoggerFactory {
     logger(type) {
         return new js_fix_logger_1.EmptyLogger(type);
     }
-    plain(fileName, maxSize) {
+    plain(fileName, maxSize, haveTimeStamp, isZipped, maxFile, dirName) {
         return new js_fix_logger_1.EmptyLogger();
     }
 }

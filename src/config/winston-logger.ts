@@ -50,11 +50,12 @@ export class WinstonLogger {
     }
   }
 
-  public plain(fileName: string, maxSize: number = 100 * 1024 * 1024, haveTimeStamp: boolean = false, isZipped: boolean = true, maxFile:number = 7): IJsFixLogger {
+  public plain(fileName: string, maxSize: number = 100 * 1024 * 1024, haveTimeStamp: boolean = false, isZipped: boolean = true, maxFile:number = 7, dirName: string = '.'): IJsFixLogger {
     var trans = new (transports.DailyRotateFile)({
       filename: `${fileName}.%DATE%.log`,
+      dirname: dirName,
       datePattern: 'YYYYMMDD',
-      zippedArchive: isZipped,
+      zippedArchive: isZipped,  
       maxSize: maxSize,
       maxFiles: maxFile
     });

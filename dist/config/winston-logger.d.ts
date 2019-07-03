@@ -8,6 +8,6 @@ export declare class WinstonLogger {
     constructor(options?: any);
     static consoleOptions(level?: string): any;
     static fileOptions(fileName: string, level?: string, maxSize?: number, format?: any): any;
-    plain(fileName: string, maxSize?: number, haveTimeStamp?: boolean, isZipped?: boolean, maxFile?: number): IJsFixLogger;
+    plain(fileName: string, maxSize?: number, haveTimeStamp?: boolean, isZipped?: boolean, maxFile?: number, dirName?: string): IJsFixLogger;
     make(type: string): IJsFixLogger;
 }
