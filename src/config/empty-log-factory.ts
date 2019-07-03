@@ -5,7 +5,7 @@ export class EmptyLogFactory extends JsFixLoggerFactory {
   public logger (type: string): IJsFixLogger {
     return new EmptyLogger(type)
   }
-  public plain (fileName: string, maxSize?: number, haveTimeStamp?: boolean, isZipped?: boolean, maxFile?: number, dirName?: string): IJsFixLogger {
+  public plain (fileName: string, maxSize?: number, haveTimeStamp?: boolean, isZipped?: boolean, maxFile?: string, dirName?: string): IJsFixLogger {
     return new EmptyLogger()
   }
 }

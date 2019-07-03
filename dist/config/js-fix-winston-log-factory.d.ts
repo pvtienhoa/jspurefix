@@ -5,5 +5,5 @@ export declare class JsFixWinstonLogFactory extends JsFixLoggerFactory {
     private wl;
     constructor(options?: any);
     logger(type: string): IJsFixLogger;
-    plain(fileName: string, maxSize?: number, haveTimeStamp?: boolean, isZipped?: boolean, maxFile?: number, dirName?: string): IJsFixLogger;
+    plain(fileName: string, maxSize?: number, haveTimeStamp?: boolean, isZipped?: boolean, maxFile?: string, dirName?: string): IJsFixLogger;
 }

@@ -12,7 +12,7 @@ class JsFixWinstonLogFactory extends js_fix_logger_factory_1.JsFixLoggerFactory 
         return this.wl.make(type);
     }
     plain(fileName, maxSize, haveTimeStamp, isZipped, maxFile, dirName) {
-        return this.wl.plain(fileName, maxSize, haveTimeStamp, isZipped, maxFile);
+        return this.wl.plain(fileName, maxSize, haveTimeStamp, isZipped, maxFile, dirName);
     }
 }
 exports.JsFixWinstonLogFactory = JsFixWinstonLogFactory;
