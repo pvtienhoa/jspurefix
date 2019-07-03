@@ -29,11 +29,13 @@ class WinstonLogger {
             ]
         };
     }
-    plain(fileName, maxSize = 100 * 1024 * 1024, haveTimeStamp = false) {
+    plain(fileName, maxSize = 100 * 1024 * 1024, haveTimeStamp = false, isZipped = true, maxFile = 7) {
         var trans = new (transports.DailyRotateFile)({
             filename: `${fileName}.%DATE%.log`,
             datePattern: 'YYYYMMDD',
-            maxSize: maxSize
+            zippedArchive: isZipped,
+            maxSize: maxSize,
+            maxFiles: maxFile
         });
         var txtLogger;
         if (haveTimeStamp) {
